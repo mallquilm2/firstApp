@@ -1,1 +1,4 @@
 <h2>{{titulo}}</h2>
+<select [ngModel]="selectedValue" (ngModelChange)="selectItem($event)">
+        <option [ngValue]="empresa" *ngFor="let empresa of empresas">{{empresa.nombre}}</option>
+</select>

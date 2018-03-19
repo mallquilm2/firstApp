@@ -20,4 +20,12 @@ export class ContactoComponent{
             console.log(params);
           });
       }
+
+      redirigir(){
+          this._router.navigate(['/contacto','Miguel']);
+      }
+
+      redirigir2(){
+        this._router.navigate(['/pagina-principal']);
+    }
 }
