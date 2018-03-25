@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { Router, ActivatedRoute,Params } from '@angular/router';
+import { RopaService } from '../services/ropa.service';
 
 @Component({
     selector:'contacto',
-    templateUrl:'../contacto/contacto.component.html'
+    templateUrl:'../contacto/contacto.component.html',
+    providers: [RopaService]
 })
 export class ContactoComponent{
     public titulo = "Pagina contacto";
